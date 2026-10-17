@@ -1,0 +1,329 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #26352b;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 10px #0000000d;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #24834a;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #344b3a;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #24834a;
+}
+
+.hero {
+    background: #eaf7ed;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    min-height: 400px;
+}
+
+.hero-content {
+    max-width: 580px;
+}
+
+.tagline {
+    color: #24834a;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.tagline) {
+    margin-bottom: 28px;
+    color: #59675c;
+}
+
+.hero-image {
+    font-size: 70px;
+    background: white;
+    border-radius: 50%;
+    padding: 45px 25px;
+    text-align: center;
+    min-width: 260px;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background: #24834a;
+    color: white;
+    padding: 13px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #176737;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px 8%;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 25px;
+    background: #f3faf4;
+    border-radius: 12px;
+}
+
+.stat-card h2 {
+    font-size: 34px;
+    color: #24834a;
+}
+
+.stat-card p {
+    color: #59675c;
+}
+
+.about,
+.donate,
+.available {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.about h2,
+.donate h2,
+.available h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.about > p,
+.donate > p,
+.available > p {
+    max-width: 750px;
+    margin: 0 auto 30px;
+    color: #68736b;
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.benefit {
+    padding: 28px 20px;
+    background: #f8faf8;
+    border-radius: 12px;
+}
+
+.benefit span {
+    font-size: 40px;
+}
+
+.benefit h3 {
+    margin: 12px 0;
+}
+
+.donate {
+    background: #f1f8f1;
+}
+
+form {
+    max-width: 550px;
+    margin: 30px auto 0;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 18px #0000000a;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 6px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d3ddd4;
+    border-radius: 7px;
+    font-size: 15px;
+    background: white;
+}
+
+form .btn {
+    width: 100%;
+    margin-top: 22px;
+}
+
+#formMessage {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #24834a;
+}
+
+#searchFood {
+    max-width: 500px;
+    margin: 10px auto 30px;
+    display: block;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    text-align: left;
+}
+
+.food-card {
+    border: 1px solid #e2e9e2;
+    border-radius: 12px;
+    padding: 22px;
+    overflow-wrap: anywhere;
+    box-shadow: 0 3px 12px #00000008;
+}
+
+.food-emoji {
+    font-size: 40px;
+}
+
+.food-card h3 {
+    margin: 8px 0;
+    color: #24834a;
+}
+
+.food-card p {
+    margin: 6px 0;
+    color: #59675c;
+}
+
+.food-card .btn {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.delete-btn {
+    display: block;
+    margin: 12px auto 0;
+    background: none;
+    border: none;
+    color: #c0392b;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.empty-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 30px;
+    color: #68736b;
+}
+
+footer {
+    background: #203d2b;
+    color: white;
+    padding: 30px 8%;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 24px;
+}
+
+footer p {
+    margin-top: 8px;
+    color: #e1eee4;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 6%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-image {
+        font-size: 45px;
+        min-width: auto;
+        padding: 30px 20px;
+    }
+
+    .stats,
+    .benefits,
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about,
+    .donate,
+    .available {
+        padding: 45px 6%;
+    }
+}
